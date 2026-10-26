@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Get help with TalkBoard, including purchases, speech, caregiver PIN recovery, and backups.">
+<title>TalkBoard Support</title>
+<style>
+:root { color-scheme: light; --ink: #203342; --muted: #506574; --accent: #126c72; --pale: #e8f5f1; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: #fbfcfa; font: 1rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: #075e65; text-underline-offset: .2em; }
+a:focus-visible { outline: 3px solid #dd9a35; outline-offset: 4px; }
+.wrap { width: min(100% - 3rem, 68rem); margin: auto; }
+header { border-bottom: 1px solid #dce9e4; background: #f4faf7; }
+nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.3rem 0; }
+.brand { color: var(--ink); font-size: 1.2rem; font-weight: 750; text-decoration: none; letter-spacing: -.035em; }
+.brand span { display: inline-block; width: .7rem; height: .7rem; margin-right: .5rem; border-radius: 50%; background: #52a99c; }
+nav a:last-child { font-weight: 650; }
+.hero { background: #f4faf7; padding: clamp(3.5rem, 8vw, 7rem) 0; }
+.hero-inner { display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 4rem; }
+.eyebrow { margin: 0 0 .8rem; color: var(--accent); font-size: .8rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+h1 { max-width: 12ch; margin: 0; font-size: clamp(2.8rem, 6vw, 5rem); line-height: 1.05; letter-spacing: -.055em; }
+.lead { max-width: 34rem; margin: 1.5rem 0 2rem; color: var(--muted); font-size: 1.2rem; }
+.button { display: inline-block; padding: .85rem 1.3rem; border-radius: .7rem; background: var(--accent); color: white; font-weight: 700; text-decoration: none; transition: background .18s, transform .18s; }
+.button:hover { background: #084e54; transform: translateY(-2px); }
+.caption { margin: .8rem 0 0; color: var(--muted); font-size: .9rem; }
+.art { aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; background: #d9eee7; }
+.bubble { position: relative; width: 68%; padding: 2rem 1.5rem; border-radius: 2rem; background: white; box-shadow: 0 18px 45px #1c665a16; text-align: center; }
+.bubble:after { content: ""; position: absolute; bottom: -.65rem; left: 24%; width: 1.5rem; height: 1.5rem; background: white; transform: rotate(45deg); }
+.tiles { display: flex; justify-content: center; gap: .6rem; }
+.tiles i { display: block; width: 2.5rem; height: 2.5rem; border-radius: .65rem; background: #8ac9b9; }
+.tiles i:nth-child(2) { background: #efc98a; } .tiles i:nth-child(3) { background: #a8c8dc; }
+.bubble p { margin: 1rem 0 0; font-size: 1.05rem; font-weight: 700; }
+main section { padding: 4.5rem 0; }
+.section-heading { max-width: 40rem; margin-bottom: 2rem; }
+h2 { margin: 0 0 .7rem; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.15; letter-spacing: -.04em; }
+.section-heading p, .answer p { color: var(--muted); }
+.answers { display: grid; grid-template-columns: 1fr 1fr; column-gap: 4rem; }
+.answer { border-top: 1px solid #dce6e1; padding: 1.5rem 0; }
+h3 { margin: 0 0 .4rem; font-size: 1.15rem; line-height: 1.35; }
+.answer p { margin: 0; }
+.contact { background: var(--pale); }
+.contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.contact p { max-width: 36rem; }
+.note { color: var(--muted); }
+footer { padding: 2rem 0; color: var(--muted); font-size: .92rem; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
+@media (max-width: 650px) { .wrap { width: min(100% - 2.5rem, 68rem); } .hero-inner, .contact-inner, .answers { grid-template-columns: 1fr; gap: 0; } .hero { padding: 3.5rem 0; } .art { width: min(14rem, 70%); margin: 3rem auto 0; } main section { padding: 3.5rem 0; } .contact-inner { gap: 1.5rem; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } .button:hover { transform: none; } }
+</style>
+</head>
+<body>
+<header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#top"><span aria-hidden="true"></span>TalkBoard</a><a href="#contact">Contact support</a></nav></header>
+<main id="top">
+<div class="hero"><div class="wrap hero-inner"><div><p class="eyebrow">TalkBoard support</p><h1>Here to help you communicate.</h1><p class="lead">Find answers to common questions or get in touch with the TalkBoard developer.</p><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfhkxX1rECmVUTzFVtOop9aYKDRc-HHH28o8hXwemm-nxly-A/viewform">Contact support <span aria-hidden="true">↗</span></a><p class="caption">Opens an English Google Form. Internet connection required.</p></div><div class="art" aria-hidden="true"><div class="bubble"><div class="tiles"><i></i><i></i><i></i></div><p>Every voice matters.</p></div></div></div></div>
+<section class="wrap" aria-labelledby="help-heading"><div class="section-heading"><p class="eyebrow">Quick help</p><h2 id="help-heading">Find your next step.</h2><p>Help with the things you might need most.</p></div><div class="answers">
+<div class="answer"><h3>Forgot your caregiver PIN?</h3><p>Use the <a href="./">PIN recovery instructions</a>, then return to TalkBoard to set a new PIN. Your words and settings are kept.</p></div>
+<div class="answer"><h3>Restore a purchase</h3><p>In Caregiver Settings, open <strong>Unlock &amp; Restore</strong>, then choose <strong>Restore Purchases</strong>. Use the Apple Account that made the purchase.</p></div>
+<div class="answer"><h3>Having trouble hearing speech?</h3><p>Check your device volume and the voice selected in TalkBoard’s voice settings. Some system voices may need to be downloaded in device settings for offline use.</p></div>
+<div class="answer"><h3>Protect your words and settings</h3><p>Keep an external backup in a location you choose. If your saved library cannot be opened, keep any existing backups and contact support before deleting or reinstalling the app.</p></div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap contact-inner"><div><p class="eyebrow">Get in touch</p><h2>Still need help?</h2><p>Tell us what happened and we’ll use your feedback to help with your question.</p><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfhkxX1rECmVUTzFVtOop9aYKDRc-HHH28o8hXwemm-nxly-A/viewform">Open support form <span aria-hidden="true">↗</span></a><p class="caption">English form · Internet connection required</p></div><div><h3>What to include</h3><p class="note">Your device model, iOS or iPadOS version, app version, and the steps that led to the issue can help us understand it.</p><p class="note">Please avoid sending sensitive personal information, your PIN, communication history, photos, or a full backup in the form.</p></div></div></section>
+</main>
+<footer><div class="wrap footer-inner"><span>TalkBoard · Support</span><div><a href="./">PIN recovery</a> &nbsp; · &nbsp; <a href="privacy.html">Privacy policy</a></div></div></footer>
+</body>
+</html>
